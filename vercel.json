@@ -12,6 +12,10 @@
       "dest": "/public/favicon.ico"
     },
     {
+      "src": "/build/(.*)",
+      "dest": "/public/build/$1"
+    },
+    {
       "src": "/(assets|css|js|images)/(.*)",
       "dest": "/public/$1/$2"
     },
@@ -22,7 +26,7 @@
   ],
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "false",
+    "APP_DEBUG": "true",
     "VIEW_COMPILED_PATH": "/tmp",
     "CACHE_DRIVER": "array",
     "SESSION_DRIVER": "cookie",
