@@ -8,16 +8,7 @@
   },
   "routes": [
     {
-      "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
-    },
-    {
-      "src": "/build/(.*)",
-      "dest": "/public/build/$1"
-    },
-    {
-      "src": "/(assets|css|js|images)/(.*)",
-      "dest": "/public/$1/$2"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
@@ -28,6 +19,7 @@
     "APP_ENV": "production",
     "APP_DEBUG": "true",
     "APP_KEY": "base64:m8eoNl3T6R4BxVGBLp4u0cjrdVIQ8uSB/bJShvO4xpA=",
+    "APP_URL": "https://ai-carir.vercel.app",
     "VIEW_COMPILED_PATH": "/tmp",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
